@@ -37,7 +37,7 @@ const socials = [
         img:'./assets/images/icons/gmail.png',
         title:'Email',
         description: 'gabrielmreinhardt<br>@gmail.com', 
-        link:'https://api.whatsapp.com/send?1=pt_BR&phone=5553999615831'
+        link:'mailto:gabrielmreinhardt@gmail.com'
     },
 ]
 
@@ -50,6 +50,7 @@ const showProjects = (projectsList) =>{
 
         let divProject = document.createElement('div')
         divProject.setAttribute('class', 'project')
+        divProject.setAttribute('target', 'blank')
         divProject.innerHTML = divWrapImg + projectTitle + projectDescription
 
         document.querySelector('#projects-list').appendChild(divProject)
