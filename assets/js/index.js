@@ -4,13 +4,13 @@ const projects = [
         img:'./assets/images/projects/pokedex.jpg',
         title:'Pokedex',
         description: "Consumo de API's, utilizando HTML, CSS e JS", 
-        link:'https://www.google.com/'
+        link:'https://gabriel3c.github.io/Pokedex-Consuming-API/'
     },
     {
         img:'./assets/images/projects/calculator.jpg',
         title:'Calculadora com bloco de resultados',
         description: "Projeto utilizando HTML, CSS e JS",
-        link:'https://www.youtube.com/'
+        link:'https://gabriel3c.github.io/Calculator/'
     }
 ]
 
@@ -44,13 +44,12 @@ const socials = [
 // lista de projetos
 const showProjects = (projectsList) =>{
     projectsList.forEach(({img, title, description, link}) => {     
-        const divWrapImg = `<a href='${link}'><div class='wrap-img'><img class='project-img' src=${img}></div></a>`
+        const divWrapImg = `<a href='${link}' target='blank'><div class='wrap-img'><img class='project-img' src=${img}></div></a>`
         const projectTitle = `<h3 class='project-title'>${title}</h3>`
         const projectDescription = `<p class='project-description'>${description}</p>`
 
         let divProject = document.createElement('div')
         divProject.setAttribute('class', 'project')
-        divProject.setAttribute('target', 'blank')
         divProject.innerHTML = divWrapImg + projectTitle + projectDescription
 
         document.querySelector('#projects-list').appendChild(divProject)
