@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.contato-box{
+    position: relative;
+    color: #251d1d;
+    border: 2px solid rgb(94, 84, 84);
+    border-radius: 10px;
+    background: white;
+    width:max-content;
+    margin: 10px 0;
+}
+
+.contato-input{
+    height:40px;
+    width: 420px;
+    margin:10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 20px 10px;
+    font-size: 1rem;
+}
+
+.contato-label{
+    position: absolute;
+    left: 25px;
+    top:20px;
+    transition: all 0.5s;
+}
+
+#message{
+    height: 200px;
+    margin: 30px 10px 10px;
+    padding: 0 20px;
+}
+#contato-btn{
+    margin: 0 0 0 auto;
+    width: max-content;
+    padding: 10px;
+}
+
+.contato-input::placeholder{
+    color: transparent;
+}
+
+.contato-input:focus ~ .contato-label, .contato-input:not(:placeholder-shown) ~ .contato-label{
+    left: 10px;
+    top:6px;
+    filter:grayscale(50%);
+    transform: scale(0.6);
+    font-weight: bold;
+}
+
+footer{
+    margin: 20px 0;
+}
+
+/* scroll-behavior: smooth; no link do a colocar o #id*/
