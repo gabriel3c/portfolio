@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-gabriel",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:gabriel3c/Portfolio.git",
+  "author": "gabriel3c <gbrei@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module"
+}

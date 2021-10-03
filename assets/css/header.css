@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menu{
     background-color: rgba(15, 15, 15, 0.829);
     align-items: center;

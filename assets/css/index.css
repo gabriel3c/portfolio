@@ -102,7 +102,7 @@ section{
     justify-content: center;
 }
 
-.redes-list{
+#redes-list{
     display: flex;
     justify-content: space-evenly;
     font-size: 15px;
@@ -119,6 +119,7 @@ section{
     width: 200px;
     height: 250px;
     transition: .2s;
+
 }
 
 .redes-box:hover{
@@ -127,15 +128,20 @@ section{
     box-shadow: 5px 5px 15px #000000cc;
 }
 
-.redes-box a{
-    text-align: center;
+.redes-box p{
     text-decoration: none;
     color: #e1e1e1;
+}
+
+.redes-value{
+    text-align: center;
     opacity: 50%;
     height: 40px;
     display: flex;
     align-items: center;
     margin: 5px 0;
+    text-decoration: none;
+    color: #e1e1e1;
 }
 
 .icon{
@@ -156,7 +162,7 @@ section{
     justify-content: center;
 }
 
-.projects-list{
+#projects-list{
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
