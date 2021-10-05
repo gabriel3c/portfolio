@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gabriel Reinhardt">
-    <meta name="keywords" content="Gabriel, Front-end, dev, javascritp, react">
-    <meta name="description" content="Portfólio pessoal com o propósito de demonstrar minhas skills e conhecimentos">
-    <link href="./assets/css/reset.css" rel="stylesheet">
-    <link href="./assets/css/header.css" rel="stylesheet">
-    <link href="./assets/css/index.css" rel="stylesheet">
-    <link href="./assets/css/footer.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriel Reinhardt" />
+    <meta
+      name="keywords"
+      content="Gabriel, Front-end, dev, javascritp, react"
+    />
+    <meta
+      name="description"
+      content="Portfólio pessoal com o propósito de demonstrar minhas skills e conhecimentos"
+    />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/header.css" rel="stylesheet" />
+    <link href="./assets/css/index.css" rel="stylesheet" />
+    <link href="./assets/css/footer.css" rel="stylesheet" />
+
+    <script src="./assets/js/showProjects.js"></script>
+    <script src="./assets/js/showSocials.js"></script>
     <script src="./assets/js/index.js"></script>
     <title>Document</title>
-</head>
-<body>
-    <header class="menu">
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <div class="menu-logo">
-            <p class="titulo">Portfolio</p>
+          <p class="titulo">Portfolio</p>
         </div>
-        <nav class="menu-nav">
-            <ul id="nav-list">
-                <li class="nav-items"><a href="#about">Sobre mim</a></li>
-                <li class="nav-items"><a href="#projects">Projetos</a></li>
-                <li class="nav-items"><a href="#redes">Contato</a></li>
-            </ul>
+        <nav id="menu-nav">
+          <button id="btn-mobile">
+            <span id="hamburguer">Menu</span>
+          </button>
+          <ul id="menu">
+            <li class="nav-items"><a href="#about">Sobre mim</a></li>
+            <li class="nav-items"><a href="#projects">Projetos</a></li>
+            <li class="nav-items"><a href="#redes">Contato</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main>
-        <section class="intro" id="about">
-            <div class="intro-left">
-                <h2 id="name">Olá, eu sou o <br>
-                    Gabriel Reinhardt =)</h2>
-                <p class="job-area">Desenvolvedor Front-end Jr</p>
-                <div class="intro-buttons">
-                    <a id="btn-cv" href="https://drive.google.com/uc?id=1npXBQuwNFL4emaccN9uulfsHuH-PIz3s&export=download">Download CV</a>
-                    <a id="btn-contato" href="#redes">Entre em Contato</a>
-                </div>
-            </div>
-            <div class="intro-right">
-                <img src="./assets/images/notebook.png">
-            </div>
-        </section>
+      <section class="intro">
+        <div class="intro-left">
+          <h2 id="name">
+            Olá, eu sou o <br />
+            Gabriel Reinhardt =)
+          </h2>
+          <p class="job-area">Desenvolvedor Front-end Jr</p>
+          <div class="intro-buttons">
+            <a
+              id="btn-cv"
+              href="https://drive.google.com/uc?id=1npXBQuwNFL4emaccN9uulfsHuH-PIz3s&export=download"
+              >Download CV</a
+            >
+            <a id="btn-contato" href="#redes">Entre em Contato</a>
+          </div>
+        </div>
+        <div class="intro-right">
+          <img src="./assets/images/notebook.png" />
+        </div>
+      </section>
 
-        <section class="about">
-            <h2 class="section-title">Sobre mim</h2>
-            <p class="about-text">
+      <section class="about" id="about">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="about-text">
+          Sou o Gabriel, desenvolvedor front-end, buscando recolocação no
+          mercado de desenvolvimento Atualmente tenho estudado React e criado
+          projetos pessoais para treinar hardskills. Gosto de estar sempre
+          estudando, aprendendo coisas novas e meu objetivo é crescer muito
+          nessa área.
+        </p>
+      </section>
 
-                Sou o Gabriel, desenvolvedor front-end, buscando recolocação no mercado de desenvolvimento
-                Atualmente tenho estudado React e criado projetos pessoais para treinar hardskills.
-                Gosto de estar sempre estudando, aprendendo coisas novas e meu objetivo é crescer muito nessa área.
+      <section id="projects">
+        <h1 class="section-title">Meus Projetos</h1>
 
-            </p>
-        </section>
-
-        <section id="projects">
-            <h1 class="section-title">Meus Projetos</h1>
-
-            <div id="projects-list">
-                <!--
+        <div id="projects-list">
+          <!--
                 <div class="project">
                     <div class="wrap-img">
                         <img class="project-img" src="">
@@ -68,29 +88,25 @@
                     <p class="project-description"></p>
                 </div>
                 -->
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="redes">
-            <h1 class="section-title">Minhas Redes</h1>
-            <div id="redes-list">
-                 <!-- <a href="" target="blank">
+      <section id="redes">
+        <h1 class="section-title">Minhas Redes</h1>
+        <div id="redes-list">
+          <!-- <a href="" target="blank">
                     <div class="redes-box"">
                         <img src="" alt="" class="icon">
                         <p class="redes-title">Whatsapp</p>
                         <p class="redes-value">(53) 99961-5831</p>
                     </div>
                 </a> -->
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2021 | Gabriel Reinhardt</p>
+      <p>© 2021 | Gabriel Reinhardt</p>
     </footer>
-
-</body>
+  </body>
 </html>
-
-
-
