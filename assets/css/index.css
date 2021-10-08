@@ -33,6 +33,7 @@ body {
   width: 85%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .intro-buttons a {
@@ -57,6 +58,15 @@ body {
 
 .intro-right img {
   height: 320px;
+}
+
+@media (max-width: 700px) {
+  .intro-right {
+    display: none;
+  }
+  .about-text {
+    width: 90%;
+  }
 }
 
 /* ABOUT */
@@ -84,6 +94,11 @@ section {
   margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+  .about-text {
+    width: 90%;
+  }
+}
 /* Redes */
 
 #redes {
@@ -99,6 +114,8 @@ section {
   justify-content: space-evenly;
   font-size: 15px;
   width: 80vw;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .redes-box {
@@ -117,6 +134,14 @@ section {
   border-radius: 10px;
   box-shadow: 5px 5px 15px #000000cc;
   transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+  .redes-box {
+    background-color: #0c0c0ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000cc;
+  }
 }
 
 .redes-box p {
@@ -158,13 +183,15 @@ section {
   width: 80vw;
   justify-content: space-evenly;
   margin-top: 15px;
+  gap: 40px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 400px;
+  min-width: 250px;
   height: max-content;
   text-align: justify;
   transition-duration: 0.5s;

@@ -44,17 +44,18 @@ const socials = [
 
 //lista socials
 
-const toggleMenu = () => {
-  const menuNav = document.getElementById('menu-nav')
+const mobileMenu = () => {
+  const menuNav = document.getElementById('menu')
   menuNav.classList.toggle('active')
+  console.log(menuNav.classList)
 }
+
 
 window.onload = () => {
   showProjects(projects)
   showSocials(socials)
 
   //botao menu responsivo hamburguer
-  const btnMobile = document.getElementById('btn-mobile')
-
-  btnMobile.addEventListener('click', toggleMenu)
+  const btn = document.getElementById('btn-mobile')
+  btn.addEventListener('click', mobileMenu)
 }
