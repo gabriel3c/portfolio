@@ -1,12 +1,18 @@
 const projects = [
   {
+    img: './assets/images/projects/doguinho.jpg',
+    title: 'Projeto Doguinho',
+    description: 'Landing page de ONG Fictícia, utilizando Bootstrap',
+    link: 'https://gabriel3c.github.io/Landing-Page-Doguinho-Bootstrap/',
+  },
+  {
     img: './assets/images/projects/pokedex.jpg',
     title: 'Pokedex',
     description: "Consumo de API's, utilizando HTML, CSS e JS",
     link: 'https://gabriel3c.github.io/Pokedex-Consuming-API/',
   },
   {
-    img: './assets/images/projects/calculator.jpg',
+    img: './assets/images/projects/calc.jpg',
     title: 'Calculadora com bloco de resultados',
     description: 'Projeto utilizando HTML, CSS e JS',
     link: 'https://gabriel3c.github.io/Calculator/',

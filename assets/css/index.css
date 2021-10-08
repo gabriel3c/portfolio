@@ -15,8 +15,8 @@ body {
   justify-content: space-around;
   flex-direction: row;
   padding: 4rem;
+  margin-top: 5rem;
   color: #e1e1e1;
-  margin: 2.5rem 0;
 }
 
 #name {
@@ -72,7 +72,7 @@ body {
 /* ABOUT */
 
 section {
-  margin: 30px 0;
+  padding: 5rem 0 0;
 }
 
 .about {
@@ -208,6 +208,18 @@ section {
   filter: grayscale(60%);
   transition: 0.5s;
   border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .project-img {
+    filter: grayscale(0%);
+    box-shadow: none;
+    box-shadow: 10px 10px 10px #000000;
+  }
+  .project:hover .project-img {
+    box-shadow: 10px 10px 10px #000000;
+    transform: none;
+  }
 }
 
 .wrap-img,
