@@ -14,7 +14,6 @@ header {
   font-family: 'DM Sans', sans-serif;
   width: 100%;
   z-index: 100;
-
 }
 .container {
   width: 85%;
@@ -83,18 +82,18 @@ header {
     opacity: 1;
     transition: 0.5s;
   }
-  
+
   #menu.active #rect1 {
     transform: translateY(13px) rotate(225deg);
   }
-  
+
   #menu.active #rect2 {
     opacity: 0;
   }
   #menu.active #rect3 {
     transform: translateY(-13px) rotate(-225deg);
   }
-  
+
   .menu-list {
     display: flex;
     flex-direction: column;
@@ -102,27 +101,28 @@ header {
     position: absolute;
     left: 0;
     top: 5rem;
-    /* padding-top: 32px; */
-    color: #ffd18d;
-    font-size: 36px;
     width: 100%;
     align-items: center;
     visibility: hidden;
     height: 0;
-    gap: 30px;
+    gap: 80px;
     transition: 1s;
-    background-color: #0f0f0f;
+    background-color: rgba(15, 15, 15, 0.829);
     overflow-y: hidden;
     z-index: 10;
   }
-  
+
+  .menu-list li a {
+    font-size: 1.5rem;
+  }
+
   #menu.active .menu-list {
     visibility: visible;
-    height: 410px;
+    height: 300px;
     transition: 0.5s;
   }
-  
-  .intro-right{
+
+  .intro-right {
     display: none;
   }
 }

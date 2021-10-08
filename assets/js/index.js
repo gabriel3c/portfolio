@@ -50,6 +50,11 @@ const mobileMenu = () => {
   console.log(menuNav.classList)
 }
 
+const closeMenu = e => {
+  console.log('chamei o close')
+  const menuNav = document.getElementById('menu')
+  menuNav.classList.remove('active')
+}
 
 window.onload = () => {
   showProjects(projects)
@@ -58,4 +63,7 @@ window.onload = () => {
   //botao menu responsivo hamburguer
   const btn = document.getElementById('btn-mobile')
   btn.addEventListener('click', mobileMenu)
+
+  const navItems = [...document.getElementsByClassName('nav-items')]
+  navItems.forEach(item => item.addEventListener('click', closeMenu))
 }
