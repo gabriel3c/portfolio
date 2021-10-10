@@ -49,6 +49,12 @@ body {
 
 #btn-cv {
   background-color: #00df5e;
+  box-shadow: 0 0 80px #05a748;
+  transition: 0.5s;
+}
+#btn-cv:hover {
+  box-shadow: 0 0 60px #02bd50;
+  transform: scale(1.1);
 }
 
 #btn-contato {
@@ -58,9 +64,14 @@ body {
 
 .intro-right img {
   height: 320px;
+  filter: drop-shadow(0px 0px 35px #471c83);
 }
 
 @media (max-width: 768px) {
+  #btn-cv:hover {
+    box-shadow: 0 0 60px #02bd50;
+    transform: scale(1);
+  }
   .intro-right {
     display: none;
   }
@@ -198,7 +209,9 @@ section {
 }
 
 .project:hover .project-img {
-  box-shadow: 5px 5px 15px #00df5e;
+  /* filter: drop-shadow(0px 0px 35px #471c83); */
+
+  box-shadow: 0px 0px 15px #00df5e;
   filter: grayscale(0%);
   transform: scale(1.05);
 }

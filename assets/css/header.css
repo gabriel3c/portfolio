@@ -38,12 +38,12 @@ header {
   list-style: none;
   align-items: start;
   width: max-content;
-  gap: 5px;
+  gap: 20px;
 }
 
 .menu-list li a {
   font-size: 1.1rem;
-  padding: 5px;
+  padding: 5px 10px;
   color: #e1e1e1;
   text-decoration: none;
   border-radius: 10px;
